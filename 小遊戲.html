@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>小遊戲</title>
+		<meta charset="utf-8">
+	</head>
+    <body 
+        style="background-image: url(背景4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;">
+        <h1 align="center" style="color: rgb(110, 36, 42);font-size:50px;">
+            Find the Button
+        </h1>
+        <h2 style="margin-top: 500px;margin-left: 1100px;margin-bottom: 0px;">
+            <input id="btn" type="button" value="" 
+                style="background-color:rgb(32, 52, 90);
+                border:rgb(32, 52, 90);
+                width:3px;height:5px;
+                font-size:20px;">
+        </h2>
+        <div id="board">
+        </div>
+        <script>
+            function clickHandler()
+            {
+                var board = document.getElementById("board");
+                board.innerHTML="恭喜找到按鈕!!";
+                board.style = "color: red;margin-left: 1100px;margin-top: 0px;";
+            }
+            var button = document.getElementById("btn");
+            button.addEventListener("click", clickHandler , false);
+        </script>
+        <h3 align="center">
+            <SCRIPT LANGUAGE="JavaScript">
+                function reP(){
+                document.getElementById('oImg').style.display = "block";
+                }
+            </SCRIPT>
+            <INPUT TYPE="button" value='完全找不到!' onclick="reP()" style="background-color:rgb(0, 0, 0);color: rgb(255, 255, 255);width:auto;height:40px;font-size:20px;margin-bottom: 10px;">
+            <img src='圖片5.jpg' id="oImg" style="display:block; display:none; margin:auto;" width="160px" hight="200px">
+        </h3>
+        <h4 align="center" >
+            <a href="index.html"target="_self"><input type="button" value="回首頁" style="background-color:rgb(0, 0, 0);color: rgb(255, 255, 255);width:auto;height:40px;font-size:20px;"></a>
+        </h4>
+        
+    </body>
+</html>
